@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+//导入av头文件
+#import <AVFoundation/AVFoundation.h>
 
+//添加协议<AVAudioPlayerDelegate, AVAudioRecorderDelegate>到viewcontroller
+@interface ViewController : UIViewController<AVAudioPlayerDelegate, AVAudioRecorderDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *recordButton;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+- (IBAction)recordPressed:(id)sender;
+- (IBAction)playPressed:(id)sender;
 @end
