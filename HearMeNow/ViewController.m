@@ -99,6 +99,10 @@
         if (!error)
         {
             soundPlayer.delegate = self;
+            
+            soundPlayer.enableRate = YES;
+            soundPlayer.rate = 0.5;
+            
             [soundPlayer play];
         } else {
             NSLog(@"Error initializing player: %@", error);
