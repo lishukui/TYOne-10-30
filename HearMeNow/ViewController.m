@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 Yan RuiLin. All rights reserved.
 //
 
+// This is the view controller implementation file
+
 #import "ViewController.h"
 
 @interface ViewController ()
